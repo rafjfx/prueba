@@ -26,7 +26,15 @@ abstract class    Vehiculo { // clase vehiculo tiene dos funciones abstractas
 }
 class Coche extends Vehiculo { // clase coche hereda de vehiculo
     public String getSonido() { // implementa las clase abstracta
-        return this.sonido;
+        return "Sonido coche " + this.sonido;
+    }
+    public void setSonido(String sonido) {
+        this.sonido = sonido;
+    }
+}
+class Moto extends Vehiculo { // clase moto hereda de vehiculo
+    public String getSonido() { // implementa las clase abstracta
+                return "Sonido moto " + this.sonido;
     }
     public void setSonido(String sonido) {
         this.sonido = sonido;
