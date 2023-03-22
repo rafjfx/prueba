@@ -11,24 +11,24 @@ public class Main {
     System.out.println(coche.getSonido());
     }
 }
-abstract class    Vehiculo {
-    String matricula;
+abstract class    Vehiculo { // clase vehiculo tiene dos funciones abstractas
     String sonido;
     int velocidadMaxima;
-    public  Vehiculo(){
-    System.out.println("Estoy en vehiculo");
+
+    public Vehiculo() {
+        System.out.println("Estoy en vehiculo");
+    }
+
+    abstract public String getSonido();
+
+    abstract public void setSonido(String sonido);
+
 }
-    public  String getSonido() {
-        return this.getSonido();
+class Coche extends Vehiculo { // clase coche hereda de vehiculo
+    public String getSonido() { // implementa las clase abstracta
+        return this.sonido;
     }
     public void setSonido(String sonido) {
         this.sonido = sonido;
     }
-
-}
-class Coche extends Vehiculo {
-
-}
-class Moto extends Vehiculo {
-
 }
