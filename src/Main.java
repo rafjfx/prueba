@@ -5,7 +5,7 @@ import java.util.concurrent.Callable;
 
 public class Main {
     public static void main(String[] args) {
-        //       Coche coche = new Coche(5,0);
+        //       Cochee coche = new Coche(5,0);
         //        System.out.println(coche.numeroDePuertas);
         //      System.out.println(coche.velocidadActual);
         //       while (coche.velocidadActual < 20) {
